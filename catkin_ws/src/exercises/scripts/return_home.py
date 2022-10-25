@@ -5,26 +5,27 @@ from geometry_msgs.msg import PoseStamped
 from actionlib_msgs.msg import GoalID
 
 def exploracion(msg):
+    #GoalID único que el algoritmo de exploración publicará, cuando finalice.
     if msg._md5sum == '302881f31927c1df708a2dbab0e80ee8':
-        movebase_origen()
+        # Nos movemos al origen
+        move_base_origen()
+        # Ejecutamos dos comandos en la terminal, definimos de almacenamiento y guardamos el mapa.
         os.system("cd /home/cire2022/ELYSIUM_NAV/catkin_ws/src/map_result; rosrun map_server map_saver -f result_exploration")
     return 0
 
 
-####--------->FUNCION DE RETORNO PARA NUESTRO ORIGEN EN EL MAPA<---------####
-def movebase_origen(): 
+####--------->FUNCIÓN DE RETORNO PARA NUESTRO ORIGEN EN EL MAPA<---------####
+def move_base_origen(): 
    # Creamos una nueva meta con el constructor PoseStamped.
     goal = PoseStamped()
     goal.header.frame_id = "map"
     goal.header.stamp = rospy.Time.now()
-   # Asignamos las coordenadas con referencia a "map". No hace falta agregar todos los parametros. Solo a manera demostrativa... 
-    goal.pose.position.x = 0
+   # Asignamos las coordenadas con referencia a "map". No hace falta agregar todos los parámetros.
     goal.pose.position.y = 0
-   # Orientacion
+   # Orientación
     goal.pose.orientation.w = 1.0 
-    # Resultado de la ejecucion de la accion.
+    # Finalmente publicamos la meta.
     goal_publisher.publish(goal)
-
     return 0    
 
 def main():
