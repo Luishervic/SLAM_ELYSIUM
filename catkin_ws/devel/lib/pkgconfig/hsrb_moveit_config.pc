@@ -1,0 +1,8 @@
+prefix=/home/cire2022/SLAM_ELYSIUM/catkin_ws/devel
+
+Name: hsrb_moveit_config
+Description: Description of hsrb_moveit_config
+Version: 0.6.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

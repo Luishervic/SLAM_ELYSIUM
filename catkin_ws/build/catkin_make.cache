@@ -1,0 +1,2 @@
+bring_up:exercises:hsrb_moveit-v0.6.0-community/hsrb_moveit:hsrb_moveit-v0.6.0-community/hsrb_moveit_config:hsrb_moveit-v0.6.0-community/hsrb_moveit_plugins:hsrb_rosnav_config:publisher_meta_etapa2
+-DCATKIN_DEVEL_PREFIX=/home/cire2022/SLAM_ELYSIUM/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cire2022/SLAM_ELYSIUM/catkin_ws/install -G Unix Makefiles
