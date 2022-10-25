@@ -9,7 +9,7 @@ def exploracion(msg):
     if msg._md5sum == '302881f31927c1df708a2dbab0e80ee8':
         # Nos movemos al origen
         move_base_origen()
-        # Ejecutamos dos comandos en la terminal, definimos de almacenamiento y guardamos el mapa.
+        # Ejecutamos dos comandos en la terminal, definimos ruta de almacenamiento y guardamos el mapa.
         os.system("cd /home/cire2022/ELYSIUM_NAV/catkin_ws/src/map_result; rosrun map_server map_saver -f result_exploration")
     return 0
 
@@ -21,6 +21,8 @@ def move_base_origen():
     goal.header.frame_id = "map"
     goal.header.stamp = rospy.Time.now()
    # Asignamos las coordenadas con referencia a "map". No hace falta agregar todos los parámetros.
+   # Solo agregamos los que son de nuestro interés.
+    goal.pose.position.x = 0
     goal.pose.position.y = 0
    # Orientación
     goal.pose.orientation.w = 1.0 

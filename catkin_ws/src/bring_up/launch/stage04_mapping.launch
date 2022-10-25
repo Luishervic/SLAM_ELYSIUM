@@ -32,8 +32,8 @@
   </node>
 
   <!--Paquetes extra -->
-  <!-- Inicializacion del nodo, "exploracion_lite"-->
-  <!--Cualquier duda con los parametros, visite la documentación de ROS -->
+  <!-- Inicialización del nodo, "exploracion_lite"-->
+  <!--Cualquier duda con los parámetros, visite la documentación de ROS -->
  <node pkg="explore_lite" type="explore" name="explore" output="screen">
   <param name="robot_base_frame" value="base_link"/>
   <param name="costmap_topic" value="/map"/>
@@ -48,7 +48,7 @@
   <param name="min_frontier_size" value="0.65"/> 
 </node>
 
-  <!--Ejecución del scrip que contiene la instrucción para lanzar el programa principal (terminales separadas)-->
+  <!--Ejecución del script que contiene la instrucción para lanzar el programa principal (terminales separadas)-->
 <node name="pkg_mapping_elysium" pkg="exercises" type="exploration_pkg.py" output= "screen"/>
   <!-- Localización -->
 <include file="$(find hsrb_rosnav_config)/launch/include/amcl.launch.xml"/>
