@@ -10,7 +10,7 @@ def exploracion(msg):
         # Nos movemos al origen
         move_base_origen()
         # Ejecutamos dos comandos en la terminal, definimos ruta de almacenamiento y guardamos el mapa.
-        os.system("cd /home/cire2022/ELYSIUM_NAV/catkin_ws/src/map_result; rosrun map_server map_saver -f result_exploration")
+        os.system("cd /home/cire2022/SLAM_ELYSIUM/catkin_ws/src/map_result; rosrun map_server map_saver -f result_exploration")
     return 0
 
 
