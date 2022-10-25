@@ -9,9 +9,11 @@ La inspección trabaja por medio de la exploración basada en fronteras, que pod
 
 De este modo el script y la determinación de que el ambiente está completamente explorado no está en función del tiempo, el algoritmo detiene la búsqueda cuando ya no hay fronteras por explorar. 
 
+--> Ejecutables en catkin_ws/src/exercises/scripts
+
 ## Instrucciones de ejecución.
 Próximamente… 
 ## Errores comunes.
-Proximamente... 
+Próximamente... 
 
 :)
