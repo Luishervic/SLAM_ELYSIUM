@@ -1,0 +1,8 @@
+prefix=/home/cire2022/SLAM_ELYSIUM/catkin_ws/install
+
+Name: mvn_pln
+Description: Description of mvn_pln
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+set(custom_msgs_MESSAGE_FILES "")
+set(custom_msgs_SERVICE_FILES "/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/custom_msgs/srv/InverseKinematics.srv;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/custom_msgs/srv/ForwardKinematics.srv;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/custom_msgs/srv/SmoothPath.srv;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/custom_msgs/srv/FindObject.srv")

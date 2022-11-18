@@ -1,0 +1,8 @@
+prefix=/home/cire2022/SLAM_ELYSIUM/catkin_ws/devel
+
+Name: navig_msgs
+Description: Description of navig_msgs
+Version: 0.0.0
+Cflags: -I/home/cire2022/SLAM_ELYSIUM/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

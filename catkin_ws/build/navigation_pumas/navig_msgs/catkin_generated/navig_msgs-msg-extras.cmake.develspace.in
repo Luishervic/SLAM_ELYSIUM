@@ -1,0 +1,2 @@
+set(navig_msgs_MESSAGE_FILES "/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/navig_msgs/msg/Edges.msg;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/navig_msgs/msg/GeometryGraph.msg")
+set(navig_msgs_SERVICE_FILES "/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/navig_msgs/srv/GetInflatedMap.srv;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/navig_msgs/srv/GetBoundaryPoints.srv;/home/cire2022/SLAM_ELYSIUM/catkin_ws/src/navigation_pumas/navig_msgs/srv/GetGoalPoint.srv")
