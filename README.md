@@ -16,4 +16,6 @@ Próximamente…
 ## Errores comunes.
 Próximamente... 
 
+## Entregables de la Etapa 05 del Concurso Iberoamericano de Robótica Espacial 2022.
+En el ejecutable de dicha etapa (stage05.launch), se agrupa lo necesario para ejecutar las tareas propuestas en la etapa 05. A cada una de las acciones le corresponde un estado determinado, hasta finalizar con el estado 3, donde el robot regresa a su estado inicial.
 :)
